@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AudiosRnd/static/css/main.284a3fe2.css",
+    "main.js": "/AudiosRnd/static/js/main.443c3ad0.js",
+    "static/media/video.mp4": "/AudiosRnd/static/media/video.4aaa7e46439b2aac8e61.mp4",
+    "static/media/bgDesktop.jpg": "/AudiosRnd/static/media/bgDesktop.0b7507888bd80067c206.jpg",
+    "index.html": "/AudiosRnd/index.html",
+    "main.284a3fe2.css.map": "/AudiosRnd/static/css/main.284a3fe2.css.map",
+    "main.443c3ad0.js.map": "/AudiosRnd/static/js/main.443c3ad0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284a3fe2.css",
+    "static/js/main.443c3ad0.js"
+  ]
+}
