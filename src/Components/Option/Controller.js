@@ -5,12 +5,12 @@ import './Controller.css'
 
 export default function Controller() {
 
-    const { setTime } = useContext(AudioContext)
+    const { setTime,time } = useContext(AudioContext)
 
 
   return (
       <div className="controllerCard">
-          <button onClick={()=>setTime(true)} >Random</button>        
+          <button onClick={()=>setTime(!time)} >Random</button>        
       </div>
   )
 }

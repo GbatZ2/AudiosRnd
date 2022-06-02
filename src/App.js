@@ -6,7 +6,8 @@ import { useState } from 'react';
 
 function App() {
 
-
+  const [valor, setValor] = useState(null)
+  const [timer, setTimer] = useState(null)
   const [time, setTime] = useState(false);
 
 
@@ -16,7 +17,7 @@ function App() {
 
 
   return (
-      <AudioContext.Provider value={{audios,time, setTime}}>
+      <AudioContext.Provider value={{audios,time, setTime,timer,valor,setValor,setTimer}}>
       <Body />
       <Controller/>
       </AudioContext.Provider>

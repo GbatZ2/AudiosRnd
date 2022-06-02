@@ -7,16 +7,13 @@ import './AudioCard.css'
 
 
 export default function AudioCard() {
-  const { audios,time } = useContext(AudioContext);
-  const [valor, setValor] = useState(null)
-  const [timer, setTimer] = useState(null)
+  const { audios,time,setValor,setTimer,timer,valor } = useContext(AudioContext);
+
 
 
   const randomAudio = () => {
     setValor(Math.floor(Math.random() * audios.length));
-    setTimer((Math.floor(Math.random() * 3060000)) + 650000)
-    console.log(timer)
-    
+    setTimer((Math.floor(Math.random() * 3060000)) )
   }
 
 
@@ -25,11 +22,10 @@ export default function AudioCard() {
   
   },[time])
 
-  if (time) {
+  if (timer!=null) {
     setInterval(() => {
       setValor(Math.floor(Math.random() * audios.length));
-      setTimer((Math.floor(Math.random() * 3060000)) + 650000)
-      console.log(timer)
+      setTimer((Math.floor(Math.random() * 3060000)) )
     }, timer);
 }
 
