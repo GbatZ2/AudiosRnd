@@ -19,7 +19,10 @@ function App() {
   return (
       <AudioContext.Provider value={{audios,time, setTime,timer,valor,setValor,setTimer}}>
       <Body />
-      <Controller/>
+      {
+        time==false?<Controller/>:""
+      }
+
       </AudioContext.Provider>
   );
 }

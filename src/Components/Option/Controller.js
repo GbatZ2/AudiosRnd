@@ -8,9 +8,14 @@ export default function Controller() {
     const { setTime,time } = useContext(AudioContext)
 
 
-  return (
-      <div className="controllerCard">
-          <button onClick={()=>setTime(!time)} >Random</button>        
-      </div>
+    return (
+        
+    <div className="controllerCard">
+            <button onClick={()=>setTime(true)} >Random</button>        
+            </div>
+        
+         
+      
+
   )
 }
