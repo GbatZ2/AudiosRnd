@@ -13,14 +13,14 @@ export default function AudioCard() {
 
 
   useEffect(() => {
-    setTimer((Math.floor(Math.random() * 3060000)+800000) )
+    setTimer((Math.floor(Math.random() * 3060000)+700000) )
     setValor(Math.floor(Math.random() * audios.length))
   },[time])
 
   if (timer==true) {
     setInterval(() => {
       setValor(Math.floor(Math.random() * audios.length));
-      setTimer((Math.floor(Math.random() * 3060000)+800000) )
+      setTimer((Math.floor(Math.random() * 3060000)+700000) )
     }, timer);
 }
 
