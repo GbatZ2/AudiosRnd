@@ -8,7 +8,7 @@ function App() {
 
   const [valor, setValor] = useState(null)
   const [timer, setTimer] = useState(null)
-  const [time, setTime] = useState(false);
+  const [time, setTime] = useState(null);
 
 
   const {audios} = UseData();
@@ -19,9 +19,8 @@ function App() {
   return (
       <AudioContext.Provider value={{audios,time, setTime,timer,valor,setValor,setTimer}}>
       <Body />
-      {
-        time==false?<Controller/>:""
-      }
+     <Controller/>
+      
 
       </AudioContext.Provider>
   );

@@ -7,22 +7,39 @@ import './AudioCard.css'
 
 
 export default function AudioCard() {
-  const { audios,time,setValor,setTimer,timer,valor } = useContext(AudioContext);
+  const { audios,time,setValor,setTimer,timer,valor,setTime } = useContext(AudioContext);
 
 
 
 
   useEffect(() => {
-    setTimer((Math.floor(Math.random() * 3060000)+700000) )
+  
     setValor(Math.floor(Math.random() * audios.length))
+    setInterval(() => {
+      
+      setTimer(Math.floor(Math.random() * 3600000) + 300000)
+      setTime(!time)
+    }, timer);
+
+
   },[time])
 
-  if (time==true) {
-    setInterval(() => {
-      setValor(Math.floor(Math.random() * audios.length));
-      setTimer((Math.floor(Math.random() * 3060000)+700000) )
-    }, timer);
-}
+
+ 
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
 
 
 
