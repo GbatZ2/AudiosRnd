@@ -17,7 +17,7 @@ export default function AudioCard() {
     setValor(Math.floor(Math.random() * audios.length))
   },[time])
 
-  if (timer==true) {
+  if (time==true) {
     setInterval(() => {
       setValor(Math.floor(Math.random() * audios.length));
       setTimer((Math.floor(Math.random() * 3060000)+700000) )
