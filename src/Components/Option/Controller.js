@@ -3,11 +3,17 @@ import { AudioContext } from "../../Context/AudioContext";
 import "./Controller.css";
 
 export default function Controller() {
-  const { setTime } = useContext(AudioContext);
+  const { setTime ,setVisible} = useContext(AudioContext);
+
+  const control = () => {
+    setTime(true)
+    setVisible(false)
+}
+
 
   return (
     <div className="controllerCard">
-      <button onClick={() => setTime(true)}>Random</button>
+      <button onClick={() => control()}>Random</button>
     </div>
   );
 }

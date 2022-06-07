@@ -9,7 +9,7 @@ function App() {
   const [valor, setValor] = useState(null)
   const [timer, setTimer] = useState(null)
   const [time, setTime] = useState(null);
-
+  const [visible, setVisible] = useState(true)
 
   const {audios} = UseData();
 
@@ -17,9 +17,14 @@ function App() {
 
 
   return (
-      <AudioContext.Provider value={{audios,time, setTime,timer,valor,setValor,setTimer}}>
+      <AudioContext.Provider value={{audios,time, setTime,timer,valor,setValor,setTimer,setVisible}}>
       <Body />
-     <Controller/>
+
+
+      {
+        visible?<Controller/>:""
+      }
+
       
 
       </AudioContext.Provider>
